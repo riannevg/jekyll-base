@@ -3,3 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+header, footer{
+    background-color:orange;
+    padding:5%;
+}
+
+section{
+    padding:5%;
+}
