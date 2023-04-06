@@ -1,0 +1,57 @@
+---
+layout: default
+title: Cards Page
+card:
+ - title: The basics
+   price: US$37
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint doloribus. 
+   inclusion-1: Inclusion 1
+   inclusion-2: This is also included
+   inclusion-3: And look at this wow
+   bg-color: bg-beige
+ - title: Most Popular
+   price: US$57
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint doloribus. 
+   inclusion-1: Inclusion number 1
+   inclusion-2: This is the 2nd
+   inclusion-3: And look at this nice
+   bg-color: bg-red
+ - title: For professionals
+   price: US$97
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint doloribus. 
+   inclusion-1: Inclusion 1
+   inclusion-2: Inclusion 2
+   inclusion-3: Inclusion 3
+   bg-color: bg-grey
+---
+
+
+
+<div class='grid'>
+    <h1 class='col-12 center padded-1'>Monthly Plans</h1>
+  </div>
+  
+  
+  <section class='grid scroll padded'>
+    
+  <!--  Card one  -->
+    
+  {% for item in page.card %}
+    <div class='col-4_sm-11 bg-beige padded-1 outer'>
+    <div class='inner {{item.bg-color}} padded-1'>
+      <h2 class='uppercase center'>{{item.title}}</h2>
+      <p class='big-text center'>{{item.price}}</p>
+      <p>{{item.description}}</p>
+      <ul>
+        <li>{{item.inclusion-1}}</li>
+        <li>{{item.inclusion-2}}</li>
+        <li>{{item.inclusion-3}}</lI>
+      </ul>
+    </div>
+    </div>
+
+    {% endfor %}
+    
+    
+    
+  </section>

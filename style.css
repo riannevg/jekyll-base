@@ -6,10 +6,98 @@
 
 
 header, footer{
-    background-color:orange;
+    background-color:greenyellow;
     padding:5%;
 }
 
 section{
     padding:5%;
 }
+
+.card{
+    padding:1rem;
+    border:3px solid orange;
+    border-radius:1rem;
+    display:block;
+    
+}
+
+
+
+
+[class*='col-'], [class*='grid']{
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    font-family: 'Montserrat', sans-serif;
+    padding:1%;
+    }
+  
+  div{
+    padding:2rem;
+  }
+  
+  .inner{
+   border:1px solid white;
+  }
+  
+  .center{text-align:center;}
+  .padded {padding:5%;}
+  .padded-1{padding:1rem;}
+  
+  .bg-beige{
+    background-color:#e3d5ca;
+    color:grey;
+  }
+  
+  .bg-red{
+    background-color:#f07167;
+    color:white;
+  }
+  
+  .bg-grey{
+    background-color:#d9d9d9;
+    color:black;
+  }
+  
+  .uppercase{
+    text-transform:uppercase;
+  }
+  
+  .big-text{
+    font-size:3rem;
+    font-weight:300;
+  }
+  
+  h1{
+    margin-bottom:0;
+  }
+  h2{
+    font-weight:200;
+    margin-bottom:1rem;
+  }
+  
+  p{
+    font-size:1rem;
+    line-height:1.2;
+    font-weight:100;
+    margin-bottom:2rem;
+  }
+  
+  ul{
+    line-height:1.2;
+    font-weight:100;
+    margin-left:1rem;
+  }
+  
+  .inner{
+    border:3px solid white;
+    padding:3rem;
+  }
+  
+  .outer{
+    border:5px solid white;
+  }
+  

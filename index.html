@@ -1,6 +1,16 @@
 ---
 layout: default
 title: Home Page
+color: Purple
+fruit: 
+ - title: Apple
+   description: Nice and green
+ - title: Mango
+   description: The most delicious
+ - title: Pear
+   description: The best voor ijsjes
+ - title: Mamey
+   description: For licuados
 ---
 
 
@@ -8,5 +18,17 @@ title: Home Page
     This is a section. 
 
     <a href="/about.html">This is the about page</a>
+
+</section>
+
+<section>
+
+    {% for item in page.fruit %}
+    <div class="card">
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+    </div>
+    {% endfor %}   
+
 
 </section>
